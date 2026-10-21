@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    margin: 0;
+}
+
+header {
+    background-color: #dcecff;
+    text-align: center;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #0d47a1;
+}
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.servicios {
+    display: flex;
+    gap: 15px;
+}
+
+.tarjeta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.formulario {
+    background-color: white;
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 12px;
+}
+
+form input, form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 9px;
+    margin-top: 5px;
+}
+
+form .privacidad {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form .privacidad input {
+    width: auto;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+#mensaje, #resultado {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media (max-width: 600px) {
+    .servicios {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+}

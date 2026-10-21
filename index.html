@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Técnica</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo">Aula Técnica</h1>
+        <p>Aprende y construye tu futuro profesional</p>
+        <button id="btnColor">Cambiar título</button>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#registro">Registro</a>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenidos</h2>
+            <p>Conoce nuestros programas académicos y regístrate para recibir más información.</p>
+            <button id="btnMensaje">Mostrar mensaje</button>
+            <p id="mensaje"></p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios académicos</h2>
+
+            <div class="servicios">
+                <div class="tarjeta">
+                    <h3>Desarrollo Web</h3>
+                    <p>Aprende a crear páginas web.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Diseño Digital</h3>
+                    <p>Conoce herramientas de diseño.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Programación</h3>
+                    <p>Desarrolla tus habilidades tecnológicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="formulario">
+            <h2>Formulario de registro</h2>
+
+            <form id="formRegistro">
+                <label for="nombre">Nombres y apellidos</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" required>
+
+                <label for="telefono">Teléfono (9 dígitos)</label>
+                <input type="tel" id="telefono" maxlength="9"
+                       pattern="[0-9]{9}" required>
+
+                <label for="programa">Programa de interés</label>
+                <select id="programa" required>
+                    <option value="">Selecciona un programa</option>
+                    <option value="Desarrollo Web">Desarrollo Web</option>
+                    <option value="Diseño Digital">Diseño Digital</option>
+                    <option value="Programación">Programación</option>
+                </select>
+
+                <label class="privacidad">
+                    <input type="checkbox" id="privacidad" required>
+                    Acepto el aviso de privacidad.
+                </label>
+
+                <button type="submit">Registrarme</button>
+            </form>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Aula Técnica - Servicios académicos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
